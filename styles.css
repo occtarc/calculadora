@@ -2,6 +2,7 @@
 html{
     font-size: 16px;
     box-sizing: border-box;
+    min-height: 100vh;
 }
 
 *,
@@ -22,11 +23,11 @@ body{
     max-width: 330px;
     min-width: 220px;
     margin: 40px auto;
-    padding: 12px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
-    background-color: #A6ACAF;
-    border: 2px solid #454242;
+    background-color: #aaa;
+    border: 2px solid #333;
     border-radius: 10px;
 }
 
@@ -44,12 +45,30 @@ body{
 .last-operation{
     width: 100%;
     height: 40%;
+    text-align: right;
+    font-size: 1.3rem;
 }
 
 .current-operation{
     width: 100%;
     height: 60%;
+    text-align: right;
+    font-size: 2.2rem;
+    display: flex;
+    justify-content: space-between;
 }
+
+#sign{
+    height: 100%;
+    width: 15%;
+    text-align: left;
+}
+
+#current-number{
+    height: 100%;
+    width: 80%;
+}
+
 
 /* Container Buttons */
 .container-buttons{
@@ -63,7 +82,7 @@ body{
     height: 55px;
     display: inline-block;
     background-color: #ECF0F1;
-    border: 2px solid #454242;
+    border: 2px solid #333;
     border-radius: 5px;
     width: calc(25% - 4.5px);
     cursor: pointer;
